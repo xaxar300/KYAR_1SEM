@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      label:not(:last-child) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+      }
+      label,
+      input {
+        font-size: 1.2em;
+      }
+      form {
+        margin: 0 auto;
+        width: 670px;
+        padding: 20px;
+        background-color: indigo;
+      }
+      h2 {
+        margin: 0;
+        padding: 5px;
+      }
+      h2 {
+        color: rgba(255, 255, 255, 1);
+        margin-bottom: 30px;
+      }
+      input {
+        border-radius: 4px;
+      }
+      label {
+        color: rgba(255, 255, 255, 1);
+      }
+      input[type="text"]:focus {
+        background-color: rgba(255, 255, 255, 1);
+        color: rgb(0, 0, 0)
+      }
+      input[type="checkbox"] {
+        float: inherit;
+      }
+      input[type="email"] {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 1);
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.75);
+  width: 400px;
+      }
+      input[type="text"],
+      input[type="mail"] {
+        background-color: rgb(255, 255, 255, .5);
+        color: rgba(255, 255, 255, 1);
+        box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.75);
+        width: 400px;
+      }
+      input[type="email"] {
+  color: rgba(255, 255, 255, 1);
+}
+      input[type="submit"] {
+        padding: 3px 15px; 
+        font-size: 1.2em;  
+      }
+      .btn {
+        box-shadow: 0 0 4px rgba(255, 255, 255, 1);
+        background-color: navy;
+        color: white;
+        padding: 5px;
+      }
+      .block_align_left {
+        width: 408px;
+        display: flex;
+        align-items: flex-start;
+      }
+      .block_align_center {
+        margin-left: 40px;
+        width: 75%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row-reverse;
+      }
+      .checkbox {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      .checkbox label{
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="">
+      <h2>Регистрация постоянного клиента</h2>
+      <label for="fam">Фамилия:<input id="fam" type="text" /></label>
+      <label for="name">Имя:<input id="name" type="text" /></label>
+      <label for="ot">Отчество:<input id="ot" type="text" /></label>
+      <label for="vozr">Ваш возраст:<input id="vozr" type="text" /></label>
+      <label
+        >Пол:
+        <div class="checkbox" style="width: 407.2px">
+          <input id="men" type="checkbox" />
+          <label for="men" style="margin-bottom: 0 !important">мужской</label>
+          <input id="woman" type="checkbox" />
+          <label for="woman">женский</label>
+        </div>
+      </label>
+      <label for="email">Email:<input id="email" type="email" /></label>
+      <label for="con">Страна проживания:<input id="con" type="text" /></label>
+      <label>
+        Откуда вы узнали о нас?
+        <div class="block_align_left">
+          <select>
+            <option>Выберите вариант</option>
+            </option>
+          </select>
+        </div>
+      </label>
+      <label for="data">
+        Дата заполнения
+        <div class="block_align_left">
+          <input id="data" class="mail" type="date" />
+        </div>
+      </label>
+      <label class="block_align_center">
+        <input class="btn" type="submit" value="Отмена" /><input
+          class="btn"
+          type="submit"
+          value="Регистрация"
+        />
+      </label>
+    </form>
+  </body>
+</html>
