@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        position: relative;
+      }
+      .container {
+        position: relative;
+      }
+      img {
+        display: block;
+      }
+      .circle-button {
+        position: absolute;
+        border-radius: 50%;
+        border: 2px solid snow;
+        cursor: pointer;
+        background: transparent;
+      }
+      .circle-button:hover {
+        border-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="komputer.jpg" alt="Компьютер" usemap="#komputerMap" />
+      <a
+        href="java.jpg"
+        target="_blank"
+        class="circle-button"
+        style="left: 845px; top: 800px; width: 100px; height: 100px"
+      ></a>
+      <a
+        href="c++.png"
+        target="_blank"
+        class="circle-button"
+        style="right: 650px; top: 1130px; width: 100px; height: 100px"
+      ></a>
+      <a
+        href="csharp.png"
+        target="_blank"
+        class="circle-button"
+        style="left: 400px; top: 1050px; width: 100px; height: 100px"
+      ></a>
+      <a
+        href="python.png"
+        target="_blank"
+        class="circle-button"
+        style="right: 1270px; bottom: 450px; width: 100px; height: 100px"
+      ></a>
+    </div>
+  </body>
+</html>

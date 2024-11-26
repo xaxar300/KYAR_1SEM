@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Город Гродно</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-image: url(FIT.png);
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: 150px 150px;
+      }
+      ol {
+        counter-reset: section;
+        list-style: none;
+        padding-left: 20px;
+      }
+
+      ol > li {
+        counter-increment: section;
+        margin-bottom: 10px;
+        font-size: 20px;
+      }
+      ol > li::before {
+        content: counter(section) ". ";
+        font-weight: bold;
+        color: #213352;
+        font-size: 24px;
+        margin-right: 10px;
+      }
+      ul {
+        list-style-type: none; 
+        padding-left: 0; 
+      }
+      ul li {
+        background-image: url("bomb.png");
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        padding-left: 30px;
+        margin-bottom: 5px;
+        font-size: 18px;
+      }
+
+      table {
+        border-collapse: collapse;
+      }
+
+      td {
+        border: 2px solid black;
+      }
+
+      h1 {
+        text-align: center;
+        font-weight: bold;
+        color: #213352;
+        font-size: 86px;
+        font-family: "Courier New", Courier, monospace;
+      }
+      h2:not([class="newh2"]) {
+        font-size: 72px;
+        color: #213352;
+        font-family: "Courier New", Courier, monospace;
+      }
+
+      .grodno {
+        font-family: "Calibri";
+        color: #30174a;
+        font-size: 32px;
+      }
+      .h2left {
+        text-align: left;
+      }
+      p.grodno {
+        font-weight: bold;
+      }
+
+      .img1 {
+        float: left;
+        width: 800px;
+        height: 500px;
+      }
+
+      .img2 {
+        margin: 21px;
+        float: right;
+        width: 740px;
+        height: 400px;
+      }
+
+      .grodno span {
+        font-style: italic;
+      }
+
+      h3 {
+        color: #340736;
+        font-family: "Comic Sans MS";
+        font-size: 24px;
+      }
+
+      .floatright {
+        float: right;
+      }
+
+      .textabout {
+        color: #340736;
+        font-family: "Comic Sans MS";
+        font-size: 24px;
+        font-style: italic;
+      }
+
+      .textabout span {
+        font-weight: bold;
+      }
+
+      .newh3 {
+        font-family: Arial;
+        color: #073620;
+        font-size: 18px;
+      }
+
+      .newp {
+        font-style: italic;
+        font-family: Arial;
+        color: #073620;
+        font-size: 18px;
+      }
+
+      .newp span {
+        font-weight: bold;
+      }
+
+      a[href="gallery.html"] {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="second.html"><h1>Город Гродно</h1></a>
+    <h2>Немного о Гродно</h2>
+    <img class="img1" src="grodno1.jpg" alt="Гродно 1" />
+    <h3 class="grodno">Великий город</h3>
+    <p class="textabout">
+      Гродно — один из старейших городов Беларуси, основанный в 1128 году. Он
+      является административным центром Гродненской области и расположен на
+      берегах реки Неман. Гродно известен своей богатой историей и культурным
+      наследием, включая множество архитектурных памятников, таких как Старый и
+      Новый замки, Коложская церковь и Кафедральный костёл Св. Франциска
+      Ксаверия.
+    </p>
+    <h3 class="h2left">Великое Княжество Литовское</h3>
+    <p class="newp">
+      В середине <span>XIII века</span> Гродно вошел в состав Великого княжества
+      Литовского. С <span>1569 года</span> город стал частью Речи Посполитой. В
+      Гродно сохранились два замка — Старый и Новый. Старый замок был построен в
+      XI веке и служил резиденцией князей и королей. Новый замок был возведен в
+      XVIII веке и использовался для королевских заседаний. Гродно был местом
+      пересечения различных культур и религий. Здесь строились православные
+      церкви, католические костелы и синагоги, что отражает многообразие
+      населения города.
+    </p>
+
+    <img class="img2" src="sovpl.jpg" alt="Современная площадь" />
+
+    <h3>Российская Империя</h3>
+    <p class="newp">
+      После третьего раздела Речи Посполитой <span>1795 году</span> Гродно был
+      присоединен к Российской империи и в <span>1801 году</span> стал
+      губернским городом. Гродно стал важным административным центром, что
+      способствовало его экономическому и культурному развитию. В 1824-1839
+      годах был построен Августовский канал, который соединил реку Неман с
+      Вислой, что способствовало развитию торговли.
+    </p>
+    <h3 class="newh3">Вторая Мировая Война</h3>
+    <p class="newp">
+      В июне <span>1941</span> года немецкие войска оккупировали Гродно, принеся
+      с собой разрушения и ужасы войны. Оккупация длилась более трех лет, вплоть
+      до освобождения города Красной Армией в июле <span>1944</span> года. Во
+      время оккупации в Гродно были созданы два еврейских гетто, в которых
+      содержалось свыше <span> 42000 </span> евреев, большинство из которых были
+      убиты или отправлены в концентрационные лагеря смерти. Город был разрушен
+      на <span>43%</span>, что затронуло не только жилые кварталы, но и
+      промышленность — серьёзно пострадали фабрики и заводы. В результате войны
+      численность населения Гродно сократилась наполовину, и город долго
+      восстанавливался после этих трагических событий.
+    </p>
+    <h2 class="newh2">Гродно сегодня</h2>
+    <ol>
+      <li>
+        Праздники, которыми известен Гродно
+        <ul>
+          <li>День Города Гродно</li>
+          <li>Фестиваль национальных культур</li>
+        </ul>
+      </li>
+      <li>
+        Места для отдыха
+        <ul>
+          <li>Кафе и рестораны на Советской</li>
+          <li>Парк Жилибера</li>
+          <li>ТРК "Тринити"</li>
+        </ul>
+      </li>
+      <li>
+        Достопримечательности
+        <ul>
+          <li>Коложский парк</li>
+          <li>Замки на берегу Немана</li>
+        </ul>
+      </li>
+    </ol>
+    <h2 class="newh2">Национальности Гродно</h2>
+    <table>
+      <tr>
+        <td colspan="2">Период в истории</td>
+        <td rowspan="2">Национальность</td>
+      </tr>
+      <tr>
+        <td>До 1941 года</td>
+        <td>После</td>
+      </tr>
+      <tr>
+        <td>31%</td>
+        <td>3%</td>
+        <td>Евреи</td>
+      </tr>
+      <tr>
+        <td>54%</td>
+        <td>81%</td>
+        <td>Беларусы</td>
+      </tr>
+      <tr>
+        <td>14%</td>
+        <td>6%</td>
+        <td>Поляки</td>
+      </tr>
+    </table>
+    <a href="gallery.html" target="_blank">Галерея</a>
+  </body>
+</html>
