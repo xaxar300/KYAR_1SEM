@@ -1,0 +1,384 @@
+body{
+  overflow-x: hidden
+}
+.image-container {
+  padding-top: 35px;
+  padding-bottom: 15px;
+  height: 170px;
+  display: flex;
+  gap: 45px;
+  overflow: hidden;
+}
+.image-container img {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+.kot1:hover {
+  transform: scale(0.5);
+  transition: 0.5s linear 0.2s;
+}
+.kot2:hover {
+  transform: rotate(45deg);
+  transition: 0.5s linear 0.2s;
+}
+.kot3:hover {
+  transform: translate(40px);
+  transition: 0.5s linear 0.2s;
+}
+.kot4:hover {
+  transform: skew(-20deg);
+  transition: 0.5s linear 0.2s;
+}
+.button-container {
+  display: inline-flex;
+  width: 100%;
+  justify-content: left;
+  margin-left: 30px;
+  align-items: center;
+  gap: 15px;
+  overflow: hidden;
+}
+.button-container button {
+  width: 100px;
+  height: 33px;
+  font-size: 10px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  overflow: hidden;
+}
+
+.button1:hover {
+  background-color: black;
+  color: white;
+}
+
+.button2:hover {
+  background-color: white;
+  color: black;
+  border: 3px solid yellow;
+  box-shadow: 0px 0px 0px 3px inset red;
+}
+
+.button3:hover {
+  background-color: white;
+  color: black;
+  border-top: 3px solid green;
+  border-bottom: 3px solid green;
+}
+
+.button4:hover {
+  background-color: white;
+  color: black;
+  border-left: 3px solid blue;
+  border-right: 3px solid blue;
+  background: radial-gradient(yellow magenta blue);
+}
+
+.button5:hover {
+  color: black;
+  background-image: radial-gradient(
+    ellipse 45px 25px,
+    yellow 1px,
+    magenta,
+    aqua
+  );
+}
+
+.honeyimgs {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+}
+.honeyimgs img {
+  margin-bottom: 20px;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+}
+.honey1 {
+  transform: perspective(17cm) rotateX(30deg);
+}
+.honey2 {
+  transform: perspective(15cm) rotateY(45deg);
+}
+.honey3 {
+  transform: perspective(17cm) rotateX(-30deg);
+}
+.honey4 {
+  transform: perspective(15cm) rotateY(-45deg);
+}
+.container {
+  height: 100px;
+  overflow: hidden;
+  padding-bottom: 60px;
+}
+.container1 {
+  height: 100px;
+  padding-bottom: 120px;
+  overflow: hidden;
+}
+.card1,
+.card2,
+.card3,
+.card4 {
+  position: absolute;
+  float: left;
+  width: 100px;
+  height: 100px;
+  border: 3px solid black;
+  background-color: palevioletred;
+  overflow: hidden;
+}
+.card1 {
+  background-image: url(kot1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: perspective(300px) rotateY(40deg);
+  left: 280px;
+  animation: cardanimation1 5s linear infinite alternate;
+}
+.card2 {
+  background-image: url(honey3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: perspective(300px) rotateY(40deg);
+  left: 300px;
+  animation: cardanimation2 5s linear infinite alternate;
+}
+.card3 {
+  background-image: url(kot4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: perspective(300px) rotateY(40deg);
+  left: 320px;
+  animation: cardanimation3 5s linear infinite alternate;
+}
+.card4 {
+  background-image: url(honey4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: perspective(300px) rotateY(40deg);
+  left: 340px;
+  animation: cardanimation4 5s linear infinite alternate;
+}
+@keyframes cardanimation1 {
+  0% {
+    transform: perspective(300px) rotateY(30deg);
+  }
+  50% {
+    transform: perspective(300px) rotateY(0deg);
+    left: 120px;
+  }
+  100% {
+    transform: perspective(300px) rotateY(0deg);
+    left: 120px;
+  }
+}
+@keyframes cardanimation2 {
+  0% {
+    transform: perspective(300px) rotateY(30deg);
+  }
+  50% {
+    transform: perspective(300px) rotateY(0deg);
+    left: 160px;
+    filter: blur(0px);
+  }
+  100% {
+    transform: perspective(300px) rotateY(0deg);
+    left: 220px;
+    filter: blur(10px);
+  }
+}
+@keyframes cardanimation3 {
+  0% {
+    transform: perspective(300px) rotateY(30deg);
+  }
+  50% {
+    transform: perspective(300px) rotateY(0deg);
+    left: 200px;
+    filter: grayscale(0);
+  }
+  100% {
+    transform: perspective(300px) rotateY(0deg);
+    left: 320px;
+    filter: grayscale(1);
+  }
+}
+@keyframes cardanimation4 {
+  0% {
+    transform: perspective(300px) rotateY(30deg);
+  }
+  50% {
+    transform: perspective(300px) rotateY(0deg);
+    left: 240px;
+    filter: invert(0);
+  }
+  100% {
+    transform: perspective(300px) rotateY(0deg);
+    left: 420px;
+    filter: invert(1);
+  }
+}
+.animation {
+  overflow: hidden;
+  margin-left: 50px;
+  width: 150px;
+  height: 200px;
+  animation: identifier 5s linear infinite;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border: 3px solid black;
+  
+}
+@keyframes identifier {
+  0% {
+    background-image: url(honey1.jpg);
+  }
+  20% {
+    background-image: url(kot1.jpg);
+  }
+  40% {
+    background-image: url(honey2.jpg);
+  }
+  60% {
+    background-image: url(kot2.jpg);
+  }
+  80% {
+    background-image: url(honey4.jpg);
+  }
+  100% {
+    background-image: url(honey1.jpg);
+  }
+}
+.container2 {
+  padding-top: 20px;
+  padding-left: 10px;
+  overflow: hidden;
+  display: block;
+  position: relative;
+  padding-bottom: 5px;
+  overflow: hidden;
+}
+.img-copy {
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  background-image: url("honey3.jpg");
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.img-copy-1 {
+  animation: moveHorizontal 3s infinite alternate;
+}
+@keyframes moveHorizontal {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(200px);
+  }
+}
+
+.img-copy-2 {
+  animation: moveToCircle 3s infinite alternate;
+}
+@keyframes moveToCircle {
+  from {
+    transform: translateX(0);
+    border-radius: 0%;
+  }
+  to {
+    transform: translateX(200px);
+    border-radius: 50%;
+  }
+}
+
+.img-copy-3 {
+  animation: moveAcrossScreen 5s linear infinite;
+}
+@keyframes moveAcrossScreen {
+  from {
+    transform: translateX(-150px);
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+}
+
+.img-copy-4 {
+  animation: moveVertical 2s infinite alternate;
+}
+@keyframes moveVertical {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}
+
+.img-copy-5 {
+  animation: moveSquarePath 4s infinite;
+  position: relative;
+}
+@keyframes moveSquarePath {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: 50px;
+  }
+  50% {
+    top: 50px;
+    left: 50px;
+  }
+  75% {
+    top: 50px;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+.text-block {
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+  padding: 10px;
+  overflow: hidden;
+  background-color: #f0f0f0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  transition: color 3s linear;
+}
+.text-block:hover {
+  color: lightsalmon;
+}
+h1 {
+  padding-left: 20px;
+  font-size: 20px;
+  animation: h1 5s linear infinite alternate;
+}
+@keyframes h1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 80%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
