@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Свойства</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+      main {
+        padding: 15px;
+      }
+      aside {
+        box-sizing: border-box;
+        margin: 0;
+        float: right;
+        width: 200px;
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-left: 1px solid #ddd;
+      }
+
+      aside h2 {
+        font-size: 18px;
+        margin-top: 0;
+        color: black;
+        text-align: center;
+      }
+      aside ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+      }
+      aside li {
+        margin-bottom: 10px;
+      }
+      aside a{
+        display: block;
+        text-decoration: none;
+        padding: 5px;
+        border-radius: 4px;
+        transition: background-color 0.3s;
+      }
+      aside a:link{
+        color: red;
+      }
+      aside a:visited {
+        color: #8B0000;
+      }
+      aside a:hover {
+        color: green;
+      }
+      aside a:active {
+        color: rgb(184, 134, 11);
+      }
+      span{
+        background-color: gray;
+        border-radius: 10px;
+        font-weight: bold;
+        padding: 2px 6px;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <aside>
+      <h2>Навигация</h2>
+      <ul>
+        <li>
+          <a href="../laba1/webform.html" target="_blank"
+            >Форма в первой лабе</a
+          >
+        </li>
+        <li>
+          <a href="../laba2/webform.html" target="_blank"
+            >Форма во второй лабе</a
+          >
+        </li>
+        <li>
+          <a href="../laba5/form.html" target="_blank">Форма в пятой лабе</a>
+        </li>
+        <li>
+          <a href="../laba5/board.html" target="_blank">Шахматная доска</a>
+        </li>
+      </ul>
+    </aside>
+    <main>
+      <h1>Списки свойств HTML и CSS</h1>
+
+    <h2>1. Свойства для работы с текстом (CSS):</h2>
+    <p><span>font-family</span>: задает семейство шрифта.</p>
+    <p><span>font-size</span>: определяет размер шрифта.</p>
+    <p><span>font-weight</span>: устанавливает насыщенность шрифта (жирность).</p>
+    <p><span>line-height</span>: задает межстрочное расстояние.</p>
+    <p><span>text-align</span>: выравнивает текст по горизонтали (слева, справа, по центру, по ширине).</p>
+    <p><span>text-transform</span>: меняет регистр текста (например, все заглавные или прописные).</p>
+    <p><span>color</span>: определяет цвет текста.</p>
+
+    <h2>2. Свойства для работы с блоками и размерами (CSS):</h2>
+    <p><span>width</span>: задает ширину элемента.</p>
+    <p><span>height</span>: задает высоту элемента.</p>
+    <p><span>padding</span>: внутренний отступ внутри элемента от содержимого до границы.</p>
+    <p><span>margin</span>: внешний отступ элемента от других элементов.</p>
+    <p><span>border</span>: задает границу элемента (толщина, стиль, цвет).</p>
+    <p><span>display</span>: определяет тип отображения элемента (например, block, inline, flex).</p>
+    <p><span>box-shadow</span>: добавляет тень вокруг элемента.</p>
+
+    <h2>3. HTML-атрибуты для управления формами и вводом данных:</h2>
+    <p><span>type</span>: определяет тип поля ввода (text, email, password, и т.д.).</p>
+    <p><span>placeholder</span>: текст-заполнитель, который отображается до ввода данных.</p>
+    <p><span>required</span>: делает поле обязательным для заполнения.</p>
+    <p><span>maxlength</span>: устанавливает максимальное количество символов для ввода.</p>
+    <p><span>min</span> и <span>max</span>: задают минимальные и максимальные значения для числовых полей.</p>
+    </main>
+  </body>
+</html>

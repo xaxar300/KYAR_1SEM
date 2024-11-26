@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>БГТУ</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .navbar {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        gap: 5px;
+      }
+      .nav-item {
+        position: relative;
+        border: 1px solid black;
+        background-color: white;
+        padding: 10px;
+        width: 150px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+      .faculty-link {
+        color: black;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .faculty-logo {
+        display: none;
+        width: 20px;
+        height: 20px;
+        margin-right: 8px;
+      }
+      .nav-item:hover .faculty-logo {
+        display: inline;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: white;
+        border: 1px solid black;
+        width: 150px;
+        box-sizing: border-box;
+        z-index: 1;
+      }
+      .dropdown-content a {
+        color: black;
+        padding: 10px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        white-space: nowrap; 
+        border-bottom: 1px solid black; 
+      }
+      .dropdown-content a:last-child {
+        border-bottom: none;
+      }
+      .nav-item.dropdown:hover .dropdown-content {
+        display: block;
+      }
+      .bstu{
+        width: 20px;
+        height: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="nav-item">
+        <a href="https://belstu.by/" target="_blank" class="faculty-link">
+          <img src="ew.png" alt="БГТУ" class="bstu">БГТУ
+        </a>
+      </div>
+      <div class="nav-item dropdown">
+        <a href="https://it.belstu.by/" target="_blank" class="faculty-link">
+          <img src="fit.jpg" alt="ИТ" class="faculty-logo" />ИТ
+        </a>
+        <div class="dropdown-content">
+          <a href="https://isit.belstu.by/" target="_blank">Кафедра ИСиТ</a>
+          <a href="https://belstu.by/fakultety/fit/ivd/" target="_blank"
+            >Кафедра ИиВД</a
+          >
+          <a href="https://belstu.by/fakultety/fit/pi/" target="_blank"
+            >Кафедра ПИ</a
+          >
+        </div>
+      </div>
+      <div class="nav-item">
+        <a href="https://pim.belstu.by/" class="faculty-link">
+          <img src="ew.png" alt="ПиМ" class="faculty-logo" />ПиМ
+        </a>
+      </div>
+      <div class="nav-item">
+        <a href="https://htit.belstu.by/" class="faculty-link">
+          <img src="ew.png" alt="ХТиТ" class="faculty-logo" />ХТиТ
+        </a>
+      </div>
+    </nav>
+  </body>
+</html>
