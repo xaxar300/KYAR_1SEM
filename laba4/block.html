@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Блочная модель</title>
+    <style>
+      .block {
+        display: inline-block;
+        width: 100px;
+        height: 150px;
+        margin: 10px;
+        text-align: center;
+        line-height: 150px;
+        font-size: 24px;
+        font-weight: bold;
+        border-width: 10px;
+      }
+
+      .red {
+        border-style: outset;
+        border-color: red;
+      }
+
+      .green {
+        border-style: dashed;
+        border-color: rgb(0, 255, 0);
+      }
+
+      .blue {
+        border-style: dotted;
+        border-color: blue;
+      }
+
+      .cyan {
+        border-style: double;
+        border-color: cyan;
+      }
+
+      .magenta {
+        border-style: groove;
+        border-color: magenta;
+      }
+
+      .yellow {
+        border-style: inset;
+        border-color: yellow;
+      }
+
+      .black {
+        border-style: solid;
+        border-color: black;
+      }
+
+      span.inline-block {
+        display: inline-block;
+        padding: 5px;
+        margin: 5px;
+        background-color: #ffa500;
+        border: 1px solid #ff4500;
+      }
+
+      p.first {
+        width: 400px;
+        text-align: center;
+        border: 2px solid #ff7f50;
+      }
+
+      p.second {
+        border: 5px solid red;
+        border-radius: 20px 40px;
+        box-shadow: inset 2px 2px 8px 8px rgba(0, 0, 0, .5);
+        overflow: auto;
+      }
+
+      p.third {
+        border: 2px solid #ff6347;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="block red">R</div>
+    <div class="block green">G</div>
+    <div class="block blue">B</div>
+    <div class="block cyan">C</div>
+    <div class="block magenta">M</div>
+    <div class="block yellow">Y</div>
+    <div class="block black">K</div>
+
+    <p class="first">
+      В современном мире технологии играют ключевую роль в жизни людей.
+      <span class="inline-block">Мобильные устройства</span>, такие как
+      смартфоны, стали незаменимыми помощниками, позволяя оставаться на связи,
+      работать и развлекаться в любой точке мира.
+    </p>
+    <p class="second">
+      История человечества полна удивительных открытий. Одним из самых значимых
+      стало изобретение
+      <span class="inline-block">электричества</span>, которое радикально
+      изменило способы производства, транспортировки и связи, сделав возможным
+      развитие современной цивилизации.
+    </p>
+    <p class="third">
+      В последние годы все больше внимания уделяется вопросам
+      <span class="inline-block">экологии</span>. Сохранение природы и
+      устойчивое развитие стали приоритетами для многих стран, что помогает
+      снижать негативное воздействие на окружающую среду и сохранять природные
+      ресурсы.
+    </p>
+  </body>
+</html>
