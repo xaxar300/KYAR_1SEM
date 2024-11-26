@@ -1,0 +1,75 @@
+@font-face {
+font-family: 'Caveat';
+    src: url('fonts/Caveat.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Exo2';
+    src: url('fonts/Exo2.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('fonts/Comfortaa.ttf') format('truetype');
+}
+
+h1 {
+    font-family: 'Caveat', sans-serif;
+    text-align: center;       
+    font-weight: bold;           
+    font-size: 45px;           
+    text-transform: uppercase;   /*пропис. буквы*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /*тень*/
+    margin-bottom: 0;            /*удаление отступа снизу*/
+}
+
+h2 {
+    font-family: 'Exo2', sans-serif;
+    margin-top: 0.2rem;          
+    margin-bottom: 1.2em;        
+    text-align: left;           
+    text-indent: 25px;           /*отступ 1й стрк. 25пикс*/
+}
+
+p {
+    font-family: 'Comfortaa', sans-serif;
+    text-align: justify;         
+    text-indent: 25px;          
+    line-height: 200%;           /*интерлиньяж*/
+    font-size: 20px;             
+    margin: 0;                   
+}
+
+/*изменение первой буквы каждого абзаца*/
+p::first-letter {
+    font-weight: bold;                   
+    font-size: 45px;                      
+    color: #ffffff;                       
+    background-color: hsla(275, 100%, 10%, 1); 
+    padding: 5px;                        
+}
+
+.roman-list {
+    list-style-type: upper-roman;         /* римские цифры */                         
+    font-family: 'Comfortaa', sans-serif; 
+    font-size: 20px;                      
+    padding-left: 40px;                
+}
+
+.roman-list li::marker{
+color: blue;      
+}
+
+.roman-list li{
+color: black;      
+}
+
+.multi-line {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 20px;                      
+    text-indent: 25px;                   
+}
+
+.multi-line:first-line {
+    color: red;                           
+}
