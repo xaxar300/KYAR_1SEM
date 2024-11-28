@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 5fr 5fr 1fr;
+            gap: 20px;
+            padding: 2px;
+        }
+        .container div {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: justify;
+        }
+        .block1 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            height: 750px;
+        }
+        .block2 {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .block3 {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .zagolovok {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            writing-mode: vertical-rl; 
+            text-orientation:sideways-right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block1">
+            <p>Веб-технологии эволюционируют, предоставляя разработчикам всё больше возможностей для создания динамических и удобных сайтов. Основой для современных веб-приложений являются такие технологии, как HTML5 и CSS3. Они позволяют разрабатывать проекты, которые легко адаптируются к различным устройствам, поддерживают мультимедиа и обеспечивают высокий уровень интерактивности.</p>
+            <p>HTML5 — это ядро любого веб-документа. Он позволяет структурировать информацию и добавлять мультимедиа-элементы без необходимости использовать сторонние плагины. Например, с помощью встроенных тегов `<video>` и `<audio>` можно воспроизводить видео и аудио прямо в браузере.</p>
+            <p>Среди основных преимуществ HTML5 стоит отметить улучшенную семантику, что упрощает разработку и поддержку кода. Это особенно важно для SEO и доступности для людей с ограниченными возможностями.</p>
+        </div>
+        <div class="block2">
+            <p>CSS3 добавляет новые возможности для стилизации страниц, включая поддержку анимаций, градиентов и адаптивного дизайна. Это делает веб-страницы более привлекательными и функциональными. Например, с помощью свойств `flexbox` и `grid` можно легко создавать сложные макеты, которые подстраиваются под размеры экрана.</p>
+            <p>Благодаря модульной структуре CSS3 разработчики могут использовать только необходимые им функции, что упрощает процесс обучения и разработки. Анимации, созданные с помощью CSS, работают плавно и не требуют использования JavaScript.</p>
+        </div>
+        <div class="block3">
+            <p>На практике HTML5 и CSS3 часто используются совместно с JavaScript. Это позволяет создавать интерактивные элементы, такие как всплывающие окна, карусели и динамические формы. JavaScript дополняет HTML и CSS, позволяя взаимодействовать с пользователем в реальном времени.</p>
+            <p>С развитием технологий такие фреймворки, как React и Vue.js, стали стандартом в веб-разработке. Они ускоряют процесс создания сложных веб-приложений, облегчая работу с динамическими данными и обеспечивая высокую производительность.</p>
+        </div>
+        <div class="zagolovok">
+            <h3>«Современные технологии: HTML5 и CSS3»</h3>
+        </div>
+    </div>
+</body>
+</html>

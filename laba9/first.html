@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 18px;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 5fr 5fr;
+            column-gap: 10px;
+            padding: 2px;
+        }
+        .zagolovok {
+            padding: 10px;
+            border-radius: 4px;
+            border: 2px solid black;
+            height: 99vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            writing-mode: vertical-rl; 
+            text-orientation:sideways-right;
+            transform: rotate(180deg);
+        }
+        .block {
+            padding: 10px;
+            border-radius: 4px;
+            border: 2px solid black;
+            height: 99vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="zagolovok">
+            <h2>Основы веб-разработки</h2>
+        </div>
+        <div class="block">
+            <p>Веб-разработка включает создание веб-сайтов, их структуру, дизайн и логику. Это процесс, сочетающий в себе программирование, проектирование пользовательских интерфейсов, обеспечение безопасности и оптимизацию производительности. Современные веб-приложения активно используют языки HTML, CSS, JavaScript, а также серверные технологии, такие как PHP, Python, и базы данных.</p>
+        </div>
+        <div class="block">
+            <p>Современные веб-разработчики применяют концепции адаптивного дизайна, чтобы сайты корректно отображались на устройствах с различным разрешением экрана. Использование CSS Flexbox и Grid Layouts упрощает процесс создания гибкой структуры страниц.</p>
+        </div>
+    </div>
+</body>
+</html>
