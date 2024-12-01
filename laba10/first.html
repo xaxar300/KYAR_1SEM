@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+     <style>
+        @import url("css/media-queries.css");
+    </style>
+
+    <link rel="stylesheet" href="css/link-style.css">
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .container {
+        width: 80%;
+        margin: 20px auto;
+        border: 1px solid #ccc;
+        text-align: center;
+      }
+
+      .header {
+        border-bottom: 1px solid #ccc;
+        padding: 10px;
+        font-size: 1.5em;
+      }
+
+      .flex-container {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+      }
+
+      .cell {
+        border: 1px solid #ccc;
+        padding: 10px;
+        flex: 1;
+        margin: 0 10px;
+      }
+
+      .cell:first-child,
+      .cell:last-child {
+        flex: 0.8;
+      }
+      video,
+      audio {
+        display: block;
+        margin: 10px auto;
+        width: 100px;
+      }
+
+      .cell-content {
+        text-align: center;
+      }
+      .cell-content video {
+        width: 80%;
+      }
+      .cell-content audio {
+        width: 80%;
+        padding-top: 100px;
+      }
+      .header-hamburger {
+            font-size: 1.5em;
+            padding: 10px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+        }
+
+        .menu li {
+            margin: 0 10px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            padding: 10px 20px;
+            color: red;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: block;
+        }
+
+        .menu a:hover {
+            background-color: #f0f0f0;
+        }
+
+        @media screen and (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .menu li {
+                margin: 10px 0;
+            }
+
+            .menu a {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .gallery-item {
+            position: relative;
+            text-align: center;
+            overflow: hidden;
+            border: 1px solid #ccc;
+        }
+
+        .gallery-item img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            padding: 5px 10px;
+            font-size: 1.2em;
+            border-radius: 5px;
+        }
+
+        @media screen and (max-width: 480px) {
+            .gallery-caption {
+                color: red; 
+            }
+        }
+        @media screen and (max-width: 1280px) {
+            .gallery {
+                flex-direction: column;
+            }
+
+            .gallery-item {
+                width: 100%;
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">Flexbox</div>
+      <div class="flex-container">
+        <div class="cell">
+          <div class="cell-content">
+            <video controls src="vid1.mp4"></video>
+            <video controls src="vid2.mp4"></video>
+            <video controls src="vid3.mp4"></video>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="cell-content">
+            <h2>Flexbox-верстка</h2>
+            <p>
+              CSS flexbox is a one-dimensional web layout method that is used to
+              arrange HTML containers in a row or column. Flexbox or CSS flexbox
+              allows the HTML elements to get automatically arranged depending
+              on screen sizes. It is a module that comes with lots of CSS
+              properties and can be used to create complex layouts
+              <p>
+                CSS Flexible Box Layout, commonly known as Flexbox,
+                 is a CSS web layout model. It is in the W3C's candidate
+                  recommendation (CR) stage. The flex layout allows
+                   responsive elements within a container to be automatically
+                    arranged depending on viewport (device screen) size.
+              </p>
+            </p>
+            <p>
+              Flexbox (или Flexible Box Layout) — это модель компоновки, которая
+              используется для более простого и эффективного выравнивания
+              элементов. Она особенно полезна для построения адаптивных
+              дизайнов, где элементы могут автоматически адаптироваться к разным
+              размерам экранов.
+            </p>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="cell-content">
+            <audio controls src="Playboi Carti - R.I.P..mp3"></audio>
+            <audio controls src="Playboi Carti - Sky [Official Video].mp3"></audio>
+            <audio controls src="Travis Scott - FE!N ft. Playboi Carti.mp3"></audio>
+          </div>
+        </div>
+      </div>
+      <div class="header-hamburger">Гамбургер-меню</div>
+      <ul class="menu">
+          <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Click Me</a></li>
+          <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Click Me</a></li>
+          <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Click Me</a></li>
+          <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Click Me</a></li>
+      </ul>
+  </div>
+    </div>
+    <h1 style="text-align: center;">Фотогалерея</h1>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="honey1.jpg" alt="Фото 1">
+            <div class="gallery-caption">Фото 1</div>
+        </div>
+        <div class="gallery-item">
+            <img src="honey2.jpg" alt="Фото 2">
+            <div class="gallery-caption">Фото 2</div>
+        </div>
+        <div class="gallery-item">
+            <img src="honey3.jpg" alt="Фото 3">
+            <div class="gallery-caption">Фото 3</div>
+        </div>
+        <div class="gallery-item">
+            <img src="honey4.jpg" alt="Фото 4">
+            <div class="gallery-caption">Фото 4</div>
+        </div>
+        <div class="gallery-item">
+            <img src="honey5.jpg" alt="Фото 5">
+            <div class="gallery-caption">Фото 5</div>
+        </div>
+        <div class="gallery-item">
+            <img src="honey6.jpg" alt="Фото 6">
+            <div class="gallery-caption">Фото 6</div>
+        </div>
+        <div class="gallery-item">
+            <img src="honey7.jpg" alt="Фото 7">
+            <div class="gallery-caption">Фото 7</div>
+        </div>
+        <div class="gallery-item">
+            <img src="honey8.jpg" alt="Фото 8">
+            <div class="gallery-caption">Фото 8</div>
+        </div>
+    </div>
+  </body>
+</html>
