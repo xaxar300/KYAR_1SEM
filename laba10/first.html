@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/link-style.css">
 
     <style>
-      body {
+    body {
         font-family: Arial, Helvetica, sans-serif;
         margin: 0;
         padding: 0;
@@ -51,6 +51,7 @@
       .cell:last-child {
         flex: 0.8;
       }
+
       video,
       audio {
         display: block;
@@ -61,60 +62,97 @@
       .cell-content {
         text-align: center;
       }
+
       .cell-content video {
         width: 80%;
       }
+
       .cell-content audio {
         width: 80%;
         padding-top: 100px;
       }
-      .header-hamburger {
-            font-size: 1.5em;
-            padding: 10px 0;
-            border-bottom: 1px solid #ccc;
-        }
 
-        .menu {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 0;
-            margin: 10px 0;
-        }
+      .menu-container {
+        width: 100%;
+      }
 
-        .menu li {
-            margin: 0 10px;
-        }
+      .hamburger {
+        display: none;
+        background-color: #ccc;
+        text-align: center;
+        padding: 10px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin: 10px 0;
+      }
 
-        .menu a {
-            text-decoration: none;
-            padding: 10px 20px;
-            color: red;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            display: block;
-        }
+      .menu {
+       display: none;
+       flex-direction: row;
+       list-style: none;
+       padding: 0;
+       margin: 10px 0;
+}
 
-        .menu a:hover {
-            background-color: #f0f0f0;
-        }
+.menu li {
+  margin: 0 10px;
+  margin: 0 auto;
+  justify-items: center;
+}
 
-        @media screen and (max-width: 768px) {
-            .menu {
-                flex-direction: column;
-                align-items: center;
-            }
+.menu a {
+  text-decoration: none;
+  padding: 10px 20px;
+  color: red;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: block;
+  width: 150px;
+}
 
-            .menu li {
-                margin: 10px 0;
-            }
+.menu a:hover {
+  background-color: #f0f0f0;
+}
 
-            .menu a {
-                width: 100%;
-                max-width: 300px;
-            }
-        }
+.menu-toggle {
+  display: none;
+}
 
+.menu-label {
+  display: block;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f8f8f8;
+  text-align: center;
+}
+
+.menu-toggle:checked ~ .menu {
+  display: flex;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    flex-direction: column; 
+    align-items: center;
+    display: none; 
+  }
+
+  .menu-toggle:checked ~ .menu {
+    display: flex;
+  }
+
+  .menu li {
+    margin: 10px 0; 
+  }
+
+  .menu a {
+    width: 100%;
+    max-width: 300px; 
+  }
+}
         .gallery {
             display: flex;
             flex-wrap: wrap;
@@ -209,13 +247,17 @@
           </div>
         </div>
       </div>
-      <div class="header-hamburger">Гамбургер-меню</div>
-      <ul class="menu">
+      <div class="header-hamburger">
+        <label for="menu-toggle" class="menu-label">Меню</label>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <ul class="menu">
           <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Click Me</a></li>
           <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Click Me</a></li>
           <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Click Me</a></li>
           <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Click Me</a></li>
-      </ul>
+        </ul>
+      </div>
+      
   </div>
     </div>
     <h1 style="text-align: center;">Фотогалерея</h1>
