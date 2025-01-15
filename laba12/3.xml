@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="style.css"?>
+<store xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="store.xsd">
+    <product>
+        <name>Айфон 14</name>
+        <category>Мобильники</category>
+        <price>2666,00 BYN</price>
+    </product>
+    <product>
+        <name>АСУС супербук с22</name>
+        <category>Ноутбуки</category>
+        <price>5525,00 BYN</price>
+    </product>
+    <product>
+        <name>Холодильник</name>
+        <category>Бытовая техника</category>
+        <price>2899,00 BYN</price>
+    </product>
+    <product>
+        <name>Телевизор</name>
+        <category>Электроника</category>
+        <price>4799,00 BYN</price>
+    </product>
+    <product>
+        <name>Микроволновка</name>
+        <category>Бытовая техника</category>
+        <price>699,00 BYN </price>
+    </product>
+</store>

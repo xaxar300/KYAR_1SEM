@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    display: flex; /* Для центровки элементов по обеим осям */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+    height: 100vh; /* Задаём высоту экрана */
+    flex-direction: column; /* Размещаем элементы по вертикали */
+    text-align: center; /* Центрируем текст */
+}
+
+form {
+    border: 2px solid black;
+    padding: 20px;
+    margin-bottom: 20px; /* Добавляем отступ снизу */
+    max-width: 500px; /* Ограничим максимальную ширину формы */
+}
+
+footer {
+    margin-top: 20px;
+    max-width: 500px; /* Ограничиваем максимальную ширину вывода */
+    text-align: left; /* Выравниваем вывод текста по левому краю */
+}
+
+span {
+    width: 310px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}

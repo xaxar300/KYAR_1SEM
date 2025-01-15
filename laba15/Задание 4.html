@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webform</title>
+    <link  rel="stylesheet" href="4.css">
+</head>
+<body>
+    <form id="studentForm">
+        <h2>Данные студента</h2>
+
+        <span>
+            <p style="width: 130px; text-align: right;">Имя студента</p>
+            <input id="firstName" style="height: 23px;" type="text" placeholder="обязательно заполнить" required>
+        </span>
+
+        <span>
+            <p style="width: 130px; text-align: right;">Отчество студента</p>
+            <input id="middleName" style="height: 23px;" type="text" placeholder="обязательно заполнить" required>
+        </span>
+
+        <span>
+            <p style="width: 130px; text-align: right;">Фамилия студента</p>
+            <input id="lastName" style="height: 23px;" type="text" placeholder="обязательно заполнить" required>
+        </span>
+        <span>
+            <p style="width: 130px; text-align: right;">Почта</p>
+            <input id="mailName" style="height: 23px;" type="email" placeholder="example@gmail.com">
+        </span>
+        <span style="width: 300px; display: block; margin-bottom: 10px;">
+            Какую социальную сеть вы используете?    
+            <input id="VK" type="checkbox"> VK 
+            <input id="Facebook"type="checkbox"> Facebook 
+            <input id="Ig" type="checkbox"> Instagram 
+        </span>
+
+        <span>
+            <p style="width: 130px; text-align: right;">Факультет</p>
+            <select id="faculty" style="height: 25px;">
+                <option value="IT">ИТ</option>
+                <option value="Engineering">ХТиТ</option>
+                <option value="Economics">ИЭ</option>
+            </select>
+        </span>
+
+        <span>
+            <p style="width: 130px; text-align: right;">Группа</p>
+            <select id="group" style="height: 25px;">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+        </span>
+
+        <span>
+            <p style="width: 130px; text-align: right;">Курс</p>
+            <select id="course" style="height: 25px;">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </span>
+
+        <button type="button" id="submitButton">Отправить</button>
+    </form>
+
+    <footer id="formOutput"></footer>
+    <script src="Script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+@import variables
+
+@function h3-size()
+    @return $fontSize * $fontMultiplierH3
+    
+@function h2-size()
+    @return $fontSize * $fontMultiplierH2
+
+@for $i from 1 through 3
+    .class-#{$i}
+        @if $i == 1
+            font-size: 13px + $i
+            color: #334033
+        @else if $i == 2
+            font-size: 13px + $i
+            color: #402f2e
+        @else 
+            font-size: 13px + $i
+            color: #3b3427
+
+@mixin body
+    max-width: 100%
+    width: 100%
+
+@mixin container
+    margin: 0 auto
+    max-width: $maxWidth
+    border: $borderContainer
+    padding: $paddingContainer
+    
+@mixin spaceBetween
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+@function colorTheme()
+    @if $condition
+        @return $hColorGreen
+    @else 
+        @return $hColorBlue
+.borderForm
+    border: 2px solid black
+.paddingForm
+    padding: 15px
+*
+    margin: 0
+    padding: 0
+    border: 0
+    box-sizing: border-box
+    color: $color
+    font-family: Arial, Helvetica, sans-serif
+
+p
+    font-size: $fontSize
+h2
+    font-size: h2-size()
+    color: colorTheme()
+h3
+    font-size: h3-size()
+
+body
+    @include body
+header
+    @include container
+    display: $flex
+    justify-content: space-between
+    align-items: center
+
+    .icon
+        img
+            width: 160px
+            height: 60px
+    nav
+        ul
+            display: $flex
+            li
+                list-style-type: none
+                border: $borderContainer
+                padding: 5px
+                width: 160px
+                text-align: center
+                &:not(:first-child)
+                    margin-left: 30px
+.content_container
+    @include container
+    margin-top: 20px
+    display: flex
+    flex-direction: row
+    main
+        .main_article
+            .main_title
+                border: $borderContainer
+                padding: $paddingContainer
+                text-align: center
+            .article_text
+                margin-top: 20px
+                display: flex
+                flex-direction: row
+                .article_text-p
+                    text-align: justify
+                    border: $borderContainer
+                    padding: $paddingContainer
+                    &:nth-child(2), &:nth-child(3)
+                        margin-left: 20px
+            .main_title-2
+                border: $borderContainer
+                padding: $paddingContainer
+                text-align: center
+                margin-top: 20px
+            .article_image
+                margin-top: 20px
+                display: flex
+                justify-content: space-evenly
+                img
+                    width: 200px
+                    height: 270px
+                    object-fit: cover
+    aside
+        min-width: 500px
+        padding-left: 20px
+        form
+            @extend .borderForm
+            @extend .paddingForm
+            label
+                @include spaceBetween
+                height: 40px
+                input
+                    @extend .borderForm
+                    &[type="submit"]
+                        @extend .paddingForm
+                    
+                        
+        .aside_title
+            margin-top: 20px
+            border: $borderContainer
+            padding: $paddingContainer
+            text-align: center
+        .aside_content
+            margin-top: 20px
+            border: $borderContainer
+            padding: 20px 10px
+            .aside_block
+                display: flex
+                &:nth-child(2)
+                    margin-top: 20px
+                img
+                    max-height: 100%
+                p
+                    margin-left: 10px
+                    border: $borderContainer
+                    padding: $paddingContainer
+                    text-align: justify
+footer
+    @include container
+    margin-top: 20px
